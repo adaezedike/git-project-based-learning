@@ -12,8 +12,19 @@ public class Employee {
         System.out.println("Salary: " + salary);
     }
 
-    public static void main(String[] args) {
-        Employee employee = new Employee("Adaeze", 30000);
-        employee.display();
-    }
+    public void increaseSalary() {
+    salary += 500;
+}
+
+public void decreaseSalary() {
+    salary -= 200;
+}
+
+
+public static void main(String[] args) {
+    Employee employee = new Employee("Adaeze", 30000);
+
+    employee.increaseSalary();
+    employee.display();
+}
 }
