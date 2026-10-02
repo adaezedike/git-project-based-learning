@@ -20,11 +20,17 @@ public void decreaseSalary() {
     salary -= 200;
 }
 
+public void addBonus(int bonus) {
+    salary += bonus;
+}
+
 
 public static void main(String[] args) {
     Employee employee = new Employee("Adaeze", 30000);
 
     employee.increaseSalary();
+    employee.addBonus(1000);
+
     employee.display();
 }
 }
