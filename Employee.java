@@ -24,6 +24,9 @@ public void addBonus(int bonus) {
     salary += bonus;
 }
 
+public int calculateAnnualSalary() {
+    return salary * 12;
+}
 
 public static void main(String[] args) {
     Employee employee = new Employee("Adaeze", 30000);
@@ -32,5 +35,6 @@ public static void main(String[] args) {
     employee.addBonus(1000);
 
     employee.display();
+    System.out.println("Annual Salary: " + employee.calculateAnnualSalary());
 }
 }
